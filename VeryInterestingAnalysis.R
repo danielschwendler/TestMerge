@@ -10,15 +10,15 @@ summary(diamonds) #print summary of diamonds to console
 # EDA ---------------------------------------------------------------------
 
 diamonds %>%
-  summarise(mean = mean(price), sd = sd(price), median = median(price))
+  summarise(mean = mean(price), sd = sd(price), median = median(price)) 
 
 diamonds %>%
   group_by(cut) %>%
-  summarise(counts = n())
+  summarise(counts = n()) 
 
 diamonds %>%
   group_by(cut) %>%
-  summarise(counts = n() / nrow(diamonds))
+  summarise(counts = n() / nrow(diamonds)) 
 
 
 # ggplots -----------------------------------------------------------------
