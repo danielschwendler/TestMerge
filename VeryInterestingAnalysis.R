@@ -2,7 +2,7 @@
 library(ggplot2) #load package ggplot for visuals and diamonds dataset
 library(dplyr)
 
-diamonds <- ggplot(diamonds) %>% #extract diamonds from package
+diamonds <- ggplot2::diamonds #extract diamonds from package
 
 summary(diamonds) #print summary of diamonds to console
 
