@@ -2,7 +2,7 @@
 library(ggplot2) #load package ggplot for visuals and diamonds dataset
 library(dplyr)
 
-diamonds <- ggplot(diamonds) %>% #extract diamonds from package
+diamonds <- ggplot(diamonds) #extract diamonds from package
 
 summary(diamonds) #print summary of diamonds to console
 
@@ -32,3 +32,7 @@ ggplot(data = diamonds, aes(x = depth, fill = cut)) +
 ggplot(data = diamonds, aes(x = depth)) +
   geom_histogram(binwidth = 0.2) +
   facet_wrap(~ cut)
+
+# Dan Changes -------------------------------------------------------------
+
+
